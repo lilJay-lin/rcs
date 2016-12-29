@@ -2,8 +2,8 @@
  * Created by linxiaojie on 2016/12/5.
  */
 const path = require('path')
-const dirVars = require('./dir_vars')
-const pageArr = require('./page_entries.config');
+const dirVars = require('./dir-vars')
+const pageArr = require('./page-entries.config.js');
 const configEntry = {};
 
 pageArr.forEach((page) => {

@@ -2,7 +2,7 @@
  * Created by linxiaojie on 2016/12/23.
  */
 const pkg = require('../../package.json')
-const dirVars = require('./dir_vars')
+const dirVars = require('./dir-vars')
 const path = require('path')
 module.exports = {
   outputDirectory: '',
@@ -17,5 +17,6 @@ module.exports = {
   dev: {
     buildPath: path.join(dirVars.ROOT_PATH, './dist/'),
     publicPath: '/',
+    port: 8080
   }
 }

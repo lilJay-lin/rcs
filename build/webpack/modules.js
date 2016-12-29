@@ -3,7 +3,7 @@
  */
 const util = require('../util')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
-const dirVars = require('./dir_vars')
+const dirVars = require('./dir-vars')
 const config = require('./config')
 
 module.exports = {

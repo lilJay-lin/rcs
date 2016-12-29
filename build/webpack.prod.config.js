@@ -2,7 +2,7 @@
  * Created by linxiaojie on 2016/11/2.
  */
 const util = require('./util')
-const dirVars = require('./webpack/dir_vars')
+const dirVars = require('./webpack/dir-vars')
 const config = require('./webpack/config')
 const baseConfig = require('./webpack.base.config')
 
@@ -19,7 +19,7 @@ module.exports = util.mergeOptions(baseConfig, {
         chunkFilename: util.assetsPath('[id].chunk.js'),
     },
     /*插件配置*/
-    plugins: require('./webpack/prod_plugins'),
+    plugins: require('./webpack/plugins'),
 
     /*定义全局变量: require('jquery')会返回window.jQuery*/
     externals: {

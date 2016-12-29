@@ -1,0 +1,72 @@
+/*
+ activity base css
+*/
+@import 'media.less';
+@black:           #000;
+@white:           #fff;
+@base-font-weight:						normal;
+@base-font-size:							0.2rem;
+@base-line-height:						1.2;
+@base-text-color:						 @black;
+@base-background:                         @white;
+@base-font-family: "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", sans-serif, Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Hiragino Sans GB W3", "FontAwesome";
+body, html{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  line-height: @base-line-height;
+}
+html, body, ul, li, div, span, img, a, p, input, textarea, button, section, article, header, footer, aside{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  background: @base-background;
+  font-family: @base-font-family;
+  font-weight: @base-font-weight;
+  line-height: @base-line-height;
+  color: @base-text-color;
+  font-size: @base-font-size;
+
+  //word-wrap: break-word;
+
+  -webkit-tap-highlight-color:rgba(255,255,255,0);
+
+  user-select: none;
+
+/*  text-rendering: optimizeLegibility;  /!* 1 *!/
+  -webkit-font-smoothing: antialiased; /!* 2 *!/
+  -moz-osx-font-smoothing: grayscale;  /!* 3 Default: auto *!/
+  -moz-font-feature-settings: "liga", "kern"*/
+}
+
+img{
+  width: 100%;
+  height:auto;
+}
+
+a{
+  text-decoration: none;
+
+  &:hover,&:visited, &:active, &:link{
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
+
+/*media 处理*/
+
+.clear{
+  display: table;
+  clear: both;
+  &:before, &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

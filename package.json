@@ -1,10 +1,10 @@
 {
-  "name": "sesaso",
+  "name": "rcs",
   "version": "1.0.0",
-  "description": "sesaso",
+  "description": "rcs",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --inline --progress --config ./build/webpack.dev.config.js --content-base ./dist",
+    "dev": "node build/dev-server.js",
     "build": "webpack --progress --profile --colors --config ./build/webpack.prod.config.js"
   },
   "keywords": [
@@ -22,6 +22,8 @@
     "eslint-loader": "^1.6.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.4",
@@ -33,6 +35,8 @@
     "postcss-loader": "^1.1.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.14.0"
   }
 }
