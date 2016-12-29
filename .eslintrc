@@ -1,0 +1,23 @@
+{
+  "extends": "standard",
+  "globals": {
+    // Put things like jQuery, etc
+    "jQuery": true,
+    "$": true
+  },
+  "env": {
+    // I write for browser
+    "browser": true,
+    // in CommonJS
+    //"node": true
+    // in jQuery
+    "jquery": true
+  },
+  // add your custom rules here
+  "rules": {
+    // allow paren-less arrow functions
+    "arrow-parens": 0,
+    // allow async-await
+    "generator-star-spacing": 0
+  }
+}

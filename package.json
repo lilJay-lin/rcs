@@ -1,0 +1,38 @@
+{
+  "name": "sesaso",
+  "version": "1.0.0",
+  "description": "sesaso",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --inline --progress --config ./build/webpack.dev.config.js --content-base ./dist",
+    "build": "webpack --progress --profile --colors --config ./build/webpack.prod.config.js"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "liljay",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "css-loader": "^0.25.0",
+    "ejs-loader": "^0.3.0",
+    "eslint": "^3.11.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.24.1",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "minimist": "^1.2.0",
+    "postcss-loader": "^1.1.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2"
+  }
+}
