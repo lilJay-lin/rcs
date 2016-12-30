@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "webpack --progress --profile --colors --config ./build/webpack.prod.config.js"
+    "build": "node build/build.js"
   },
   "keywords": [
     "webpack"
@@ -35,7 +35,9 @@
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "minimist": "^1.2.0",
+    "ora": "^0.4.0",
     "postcss-loader": "^1.1.0",
+    "shelljs": "^0.7.5",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
