@@ -5,19 +5,19 @@ var dev = {
   /*
    * 查询外出申请列表
    * */
-  goout: '/static/goout.json',
+  goout: '/mock/static/goout.json',
   /*
    * 审批外出申请
    * */
-  resolve_goout: '/static/resolve_goout.json?id=',
+  resolve_goout: '/mock/static/resolve_goout.json?id=',
   /*
    * 我发起的
    * */
-  istart: '/static/istart.json',
+  istart: '/mock/static/istart.json',
   /*
   * 新闻列表
   * */
-  news: '/static/news.json'
+  news: '/mock/static/news.json'
 }
 var prod = {}
 
