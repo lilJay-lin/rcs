@@ -56,6 +56,7 @@ body{
 }
 .vertical-middle(apply-item-info, 1rem);
 .apply-item-info{
+  position: relative;
   width:0;
   flex: 1;
   color: @val-color;
@@ -94,7 +95,7 @@ body{
 
 .apply-btn{
   background-color: #f4f4f4;
-  border-top: 1px solid #e7e7e7;
+  border-top: 1px solid #e7e7e7;overflow: hidden;
   a{
     display: block;
     width: 4.55rem;
@@ -131,6 +132,7 @@ body{
   }
 }
 .apply-reason-radio{
+  cursor: pointer;
   >div{
     padding: 0 0.4rem;
     border-top: 1px solid #e5e5e5;
@@ -181,4 +183,15 @@ body{
       color: #418edd;
     }
   }
+}
+input.select-date{
+  position: absolute;
+  border:0;
+  outline: 0;
+  top:0;
+  bottom: 0;
+  background-color: transparent;
+  right: -0.3rem;
+  width: 50%;
+  color: transparent;
 }

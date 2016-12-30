@@ -12,6 +12,7 @@ module.exports = {
     pages: path.resolve(dirVars.SRC_PATH, './pages/' + config.baseDirectory),
     common: path.resolve(dirVars.SRC_PATH, './public/common'),
     less: path.resolve(dirVars.SRC_PATH, './public/less'),
+    vendor: path.resolve(dirVars.SRC_PATH, './public/vendor')
   },
   extentions: ['', '.js']
 }

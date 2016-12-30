@@ -2,37 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <meta http-equiv="Cache-Control" content="no-transform"/>
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <meta name="format-detection" content="telephone=no"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta content="yes" name="apple-touch-fullscreen"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-  <title></title>
+  <title>外出申请</title>
   <script>!function (n) {
-    var e = n.document, t = e.documentElement, dpr, scale;
-    var isAndroid = n.navigator.appVersion.match(/android/gi), isIPhone = n.navigator.appVersion.match(/iphone/gi), devicePixelRatio = n.devicePixelRatio;
-    if (isIPhone) {
-      if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
-        dpr = 2
-      } else {
-        dpr = 1
-      }
-    } else {
-      dpr = 1
-    }
-    scale = 1 / dpr;
-    var metaEl = e.createElement("meta");
-    var scale = dpr === 1 ? 1 : 0.5;
-    metaEl.setAttribute("name", "viewport");
-    metaEl.setAttribute("content", "initial-scale=" + scale + ", maximum-scale=" + scale + ", minimum-scale=" + scale + ", user-scalable=no");
-    if (t.firstElementChild) {
-      t.firstElementChild.appendChild(metaEl)
-    } else {
-      var wrap = e.createElement("div");
-      wrap.appendChild(metaEl);
-      e.write(wrap.innerHTML)
-    }
+    var e = n.document, t = e.documentElement;
     var i = 1440, d = i / 200, rem, o = "orientationchange" in n ? "orientationchange" : "resize", a = function () {
       var n = t.clientWidth || 320;
       n > i && (n = i), t.style.fontSize = (rem = n / d) + "px"
@@ -47,6 +26,9 @@
     };
     e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1))
   }(window);</script>
+  <link rel="stylesheet" href="./static/vendor/jquery.datetimepicker.css">
+  <script src="./static/vendor/jquery.js"></script>
+  <script src="./static/vendor/jquery.datetimepicker.full.min.js"></script>
 </head>
 <body>
 <div class="page">
@@ -56,14 +38,16 @@
         <div class="apply-item">
           <div class="apply-item-tit">外出地点</div>
         </div>
-        <input type="text" placeholder="请填写"/>
+        <input type="text" placeholder="请填写" class="js-address"/>
       </div>
       <div class="apply">
         <div class="apply-item">
           <div class="apply-item-tit">外出起始时间</div>
-          <div class="apply-item-info">
+          <div class="apply-item-info ">
+            <input type="text" class="select-date js-start-datetime">
             <div class="apply-item-info-val">
-              2016-12-12 09:00
+              <span  class="js-start-date"></span>
+              <span  class="js-start-time">09:00</span>
             </div>
             <img src="../_img/caledar.png" alt="">
           </div>
@@ -71,32 +55,32 @@
         <div class="apply-item">
           <div class="apply-item-tit">外出结束时间</div>
           <div class="apply-item-info">
+            <input type="text" class="select-date js-end-datetime">
             <div class="apply-item-info-val">
-              2016-12-12 09:00
+              <span  class="js-end-date"></span>
+              <span  class="js-end-time">18:00</span>
             </div>
             <img src="../_img/caledar.png" alt="">
           </div>
         </div>
       </div>
       <div class="apply">
-        <div class="apply-item">
+        <div class="apply-item js-apply-reason">
           <div class="apply-item-tit">外出原因</div>
           <div class="apply-item-info">
-            <div class="apply-item-info-val select">
-              外出会议
-            </div>
+            <div class="apply-item-info-val select js-reason"></div>
           </div>
         </div>
         <div class="apply-item">
           <div class="apply-item-tit">外出事由</div>
         </div>
-        <textarea placeholder="请填写"></textarea>
+        <textarea placeholder="请填写" class="js-detail"></textarea>
       </div>
     </div>
   </div>
   <div class="page-bottom">
     <div class="apply-btn">
-      <a href="" class="disabled">提交</a>
+      <a href="javascript:void(0)" class="">提交</a>
     </div>
   </div>
   <div class="mask">
@@ -104,19 +88,19 @@
       <h3>外出原因</h3>
       <div class="apply-reason-radio">
         <div>
-          <input id="reason-1" name="reason" type="radio">
+          <input id="reason-1" name="reason" type="radio" value="拜访客户">
           <label for="reason-1">拜访客户</label>
         </div>
         <div>
-          <input id="reason-2" name="reason" type="radio">
+          <input id="reason-2" name="reason" type="radio" value="外出会议">
           <label for="reason-2">外出会议</label>
         </div>
         <div>
-          <input id="reason-3" name="reason" type="radio">
+          <input id="reason-3" name="reason" type="radio" value="外出培训">
           <label for="reason-3">外出培训</label>
         </div>
         <div>
-          <input id="reason-4" name="reason" type="radio">
+          <input id="reason-4" name="reason" type="radio" value="其他">
           <label for="reason-4">其他</label>
         </div>
       </div>

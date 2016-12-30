@@ -54,5 +54,9 @@ module.exports = util.mergeOptions(baseConfig, {
         chunkFilename: util.assetsPath('[id].chunk.js'),
     },
     /*插件配置*/
-    plugins: plugins
+    plugins: plugins,
+    /*定义全局变量: require('jquery')会返回window.jQuery*/
+    externals: {
+        'jquery': 'window.jQuery'
+    }
 });

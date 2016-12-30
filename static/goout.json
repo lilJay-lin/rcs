@@ -1,0 +1,28 @@
+{
+  "status": 1,
+  "redirect": "http://www.baidu.com",
+  "list": [
+    {
+      "id": "201412312",
+      "name": "张学友",
+      "department": "互联网事业部/数字电商业务部/产品部",
+      "reason": "外出会议",
+      "destination": "南方基地",
+      "start-date": "2016-12-15",
+      "start-time": "09:00:00",
+      "end-date": "2016-12-15",
+      "end-time": "12:00:00"
+    },
+    {
+      "id": "201412312",
+      "name": "张学友",
+      "department": "互联网事业部/数字电商业务部/产品部",
+      "reason": "外出会议",
+      "destination": "南方基地",
+      "start-date": "2016-12-15",
+      "start-time": "09:00:00",
+      "end-date": "2016-12-15",
+      "end-time": "12:00:00"
+    }
+  ]
+}

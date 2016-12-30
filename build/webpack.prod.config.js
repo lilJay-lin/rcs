@@ -23,7 +23,6 @@ module.exports = util.mergeOptions(baseConfig, {
 
     /*定义全局变量: require('jquery')会返回window.jQuery*/
     externals: {
-        'jquery': 'window.jQuery',
-        'swiper': 'window.Swiper'
+        'jquery': 'window.jQuery'
     }
 });

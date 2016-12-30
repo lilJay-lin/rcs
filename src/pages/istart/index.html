@@ -2,58 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <meta http-equiv="Cache-Control" content="no-transform"/>
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <meta name="format-detection" content="telephone=no"/>
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta content="yes" name="apple-touch-fullscreen"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <title></title>
+  <script>!function (n) {
+    var e = n.document, t = e.documentElement;
+    var i = 1440, d = i / 200, rem, o = "orientationchange" in n ? "orientationchange" : "resize", a = function () {
+      var n = t.clientWidth || 320;
+      n > i && (n = i), t.style.fontSize = (rem = n / d) + "px"
+    };
+    n.px2rem = function (px) {
+      var v = parseFloat(px);
+      return v / rem
+    };
+    n.rem2px = function (r) {
+      var v = parseFloat(r);
+      return rem * v
+    };
+    e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1))
+  }(window);</script>
   <title>我发起的</title>
-  <script>!function(n){var e=n.document,t=e.documentElement,dpr,scale;var isAndroid=n.navigator.appVersion.match(/android/gi),isIPhone=n.navigator.appVersion.match(/iphone/gi),devicePixelRatio=n.devicePixelRatio;if(isIPhone){if(devicePixelRatio>=2&&(!dpr||dpr>=2)){dpr=2}else{dpr=1}}else{dpr=1}scale=1/dpr;var metaEl=e.createElement("meta");var scale=dpr===1?1:0.5;metaEl.setAttribute("name","viewport");metaEl.setAttribute("content","initial-scale="+scale+", maximum-scale="+scale+", minimum-scale="+scale+", user-scalable=no");if(t.firstElementChild){t.firstElementChild.appendChild(metaEl)}else{var wrap=e.createElement("div");wrap.appendChild(metaEl);e.write(wrap.innerHTML)}var i=1440,d=i/200,rem,o="orientationchange" in n?"orientationchange":"resize",a=function(){var n=t.clientWidth||320;n>i&&(n=i),t.style.fontSize=(rem=n/d)+"px"};n.px2rem=function(px){var v=parseFloat(px);return v/rem};n.rem2px=function(r){var v=parseFloat(r);return rem*v};e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1))}(window);</script>
 </head>
 <body>
 <div class="goout-container">
-  <div class="goout-item">
-    <div class="goout-top">
-      <div class="name-left">
-        <div class="man-icon">
-          <img src="../_img/man.png" alt=""/>
-        </div>
-        <div class="goout-title">
-          外出申请
-        </div>
-      </div>
-      <div class="name-right">
-        <div class="arrow">
-          <img src="../_img/arrow.png" alt=""/>
-        </div>
-        <div class="arrow-text">
-          部门领导审批
-        </div>
-      </div>
-
-    </div>
-    <div class="goout-body">
-      <div class="goout-row">
-        申请人：张学友
-      </div>
-      <div class="goout-row">
-        所属部门：互联网事业部/数字电商业务部/产品部
-      </div>
-      <div class="goout-row">
-        外出原因：外出会议
-      </div>
-      <div class="goout-row">
-        外出地点：南方基地
-      </div>
-      <div class="goout-row">
-        外出开始时间：2016-12-15 09:00:00
-      </div>
-      <div class="goout-row">
-        外出结束时间：2016-12-15 12:00:00
-      </div>
-    </div>
-  </div>
+</div>
+<template id="goout-item-tpl">
   <div class="goout-item">
     <div class="goout-top">
       <div class="name-left">
@@ -69,33 +47,33 @@
           <img src="../_img/arrow.png" alt=""/>
         </div>
         <div class="arrow-text arrow-done">
-          审批通过
+          {status}
         </div>
       </div>
 
     </div>
     <div class="goout-body">
       <div class="goout-row">
-        申请人：张学友
+        申请人：{name}
       </div>
       <div class="goout-row">
-        所属部门：互联网事业部/数字电商业务部/产品部
+        所属部门：{department}
       </div>
       <div class="goout-row">
-        外出原因：外出会议
+        外出原因：{reason}
       </div>
       <div class="goout-row">
-        外出地点：南方基地
+        外出地点：{destination}
       </div>
       <div class="goout-row">
-        外出开始时间：2016-12-15 09:00:00
+        外出开始时间：<span>{start-date}</span><span>{start-time}</span>
       </div>
       <div class="goout-row">
-        外出结束时间：2016-12-15 12:00:00
+        外出结束时间：<span>{end-date}</span><span>{end-time}</span>
       </div>
     </div>
   </div>
-
-</div>
+</template>
+<script src="./static/vendor/jquery.js"></script>
 </body>
 </html>
