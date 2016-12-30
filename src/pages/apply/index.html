@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta content="yes" name="apple-touch-fullscreen"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <title></title>
+  <script>!function (n) {
+    var e = n.document, t = e.documentElement, dpr, scale;
+    var isAndroid = n.navigator.appVersion.match(/android/gi), isIPhone = n.navigator.appVersion.match(/iphone/gi), devicePixelRatio = n.devicePixelRatio;
+    if (isIPhone) {
+      if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+        dpr = 2
+      } else {
+        dpr = 1
+      }
+    } else {
+      dpr = 1
+    }
+    scale = 1 / dpr;
+    var metaEl = e.createElement("meta");
+    var scale = dpr === 1 ? 1 : 0.5;
+    metaEl.setAttribute("name", "viewport");
+    metaEl.setAttribute("content", "initial-scale=" + scale + ", maximum-scale=" + scale + ", minimum-scale=" + scale + ", user-scalable=no");
+    if (t.firstElementChild) {
+      t.firstElementChild.appendChild(metaEl)
+    } else {
+      var wrap = e.createElement("div");
+      wrap.appendChild(metaEl);
+      e.write(wrap.innerHTML)
+    }
+    var i = 1440, d = i / 200, rem, o = "orientationchange" in n ? "orientationchange" : "resize", a = function () {
+      var n = t.clientWidth || 320;
+      n > i && (n = i), t.style.fontSize = (rem = n / d) + "px"
+    };
+    n.px2rem = function (px) {
+      var v = parseFloat(px);
+      return v / rem
+    };
+    n.rem2px = function (r) {
+      var v = parseFloat(r);
+      return rem * v
+    };
+    e.addEventListener && (n.addEventListener(o, a, !1), e.addEventListener("DOMContentLoaded", a, !1))
+  }(window);</script>
+</head>
+<body>
+<div class="page">
+  <div class="page-content">
+    <div class="apply-container">
+      <div class="apply">
+        <div class="apply-item">
+          <div class="apply-item-tit">外出地点</div>
+        </div>
+        <input type="text" placeholder="请填写"/>
+      </div>
+      <div class="apply">
+        <div class="apply-item">
+          <div class="apply-item-tit">外出起始时间</div>
+          <div class="apply-item-info">
+            <div class="apply-item-info-val">
+              2016-12-12 09:00
+            </div>
+            <img src="../_img/caledar.png" alt="">
+          </div>
+        </div>
+        <div class="apply-item">
+          <div class="apply-item-tit">外出结束时间</div>
+          <div class="apply-item-info">
+            <div class="apply-item-info-val">
+              2016-12-12 09:00
+            </div>
+            <img src="../_img/caledar.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="apply">
+        <div class="apply-item">
+          <div class="apply-item-tit">外出原因</div>
+          <div class="apply-item-info">
+            <div class="apply-item-info-val select">
+              外出会议
+            </div>
+          </div>
+        </div>
+        <div class="apply-item">
+          <div class="apply-item-tit">外出事由</div>
+        </div>
+        <textarea placeholder="请填写"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="page-bottom">
+    <div class="apply-btn">
+      <a href="" class="disabled">提交</a>
+    </div>
+  </div>
+  <div class="mask">
+    <div class="apply-reason">
+      <h3>外出原因</h3>
+      <div class="apply-reason-radio">
+        <div>
+          <input id="reason-1" name="reason" type="radio">
+          <label for="reason-1">拜访客户</label>
+        </div>
+        <div>
+          <input id="reason-2" name="reason" type="radio">
+          <label for="reason-2">外出会议</label>
+        </div>
+        <div>
+          <input id="reason-3" name="reason" type="radio">
+          <label for="reason-3">外出培训</label>
+        </div>
+        <div>
+          <input id="reason-4" name="reason" type="radio">
+          <label for="reason-4">其他</label>
+        </div>
+      </div>
+      <div class="apply-reason-btns">
+        <a href="javascript:void(0)">取消</a>
+        |
+        <a href="javascript:void(0)"  class="active">确定</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

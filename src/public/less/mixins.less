@@ -263,3 +263,19 @@
     background-color: @bg;
   }
 }
+
+/*
+  垂直居中
+*/
+.vertical-middle(@name, @height) {
+  .@{name}{
+    font-size: 0;
+    height: @height;
+    &:before{
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+}
