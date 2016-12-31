@@ -8,7 +8,7 @@
 3. 业务公共资源可以在`src/pages/`下新建以*_*开头的文件夹
 4. api定义在`src/public/common/api`文件，文件内部`dev`变量定义的是开发时的json数据，json文件存放在`/static`目录下，`prod`变量定义的则是线上使用的api地址
 5. 非`npm install`的第三方模块，可以放在`static/vendor`目录下，页面引用路径为`./static/vendor/*.js`，打包的时候会把static下所有的文件复制到`dist/static`目录下
-
+6. 开发环境`server.post`默认使用`get`方式处理
 
 ##使用方式
 
