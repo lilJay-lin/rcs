@@ -26,11 +26,11 @@ $(function () {
   /*
   * 加载数据
   * */
-  server.get(api.goout).done(function (res) {
-    if (res && res.status === status.OK && res.list) {
-      var list = res.list
-      if (list.length > 0) {
-        $cnt.html(util.renderArray($('#goout-item-tpl').html(), list))
+  server.post(api.goout, {opertionType: '2'}).done(function (res) {
+    if (res && res.result === status.OK && res.items) {
+      var items = res.items
+      if (items.length > 0) {
+        $cnt.html(util.renderArray($('#goout-item-tpl').html(), items))
         return
       }
       check()
@@ -42,8 +42,8 @@ $(function () {
   $cnt.delegate('.goout-button', 'click', function () {
     var $el = $(this)
     var id = $el.data('id')
-    server.get(api.resolve_goout + id).done(function (res) {
-      if (res && res.status === status.OK) {
+    server.post(api.resolve_goout, {processId: id, strApproveValue: 1}).done(function (res) {
+      if (res && res.result === status.OK) {
         alert('审批成功')
         $el.closest('.goout-item').remove()
       }

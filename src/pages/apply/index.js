@@ -3,6 +3,10 @@
  */
 require('less/rcs.less')
 var $ = require('jquery')
+var server = require('common/server')
+var api = require('common/api').list
+var status = require('common/api').status
+var validate = require('common/validate')
 var $address = $('.js-address')
 var $reason = $('.js-reason')
 var $detail = $('.js-detail')
@@ -20,7 +24,7 @@ $(function () {
   $('.select-date').datetimepicker()
 
   /*
-  * 开始时间
+  * 设置开始/结束时间
   * */
   $('.js-start-datetime').on('change', function () {
     var $el = $(this)
@@ -40,6 +44,9 @@ $(function () {
     }
   }
 
+  /*
+  * 显示/关闭选择外出原因弹窗
+  * */
   function toggleReason () {
     $('.mask').toggle()
   }
@@ -63,6 +70,12 @@ $(function () {
     $reason.removeClass('select').html(value)
     toggleReason()
   })
+  /*
+  * 取消
+  * */
+  $('.js-apply-reason .js-cancel').on('click', function () {
+    toggleReason()
+  })
 
   /*
   * 提交
@@ -73,16 +86,62 @@ $(function () {
       return
     }
     $(this).addClass('disabled')
+    var billTitle = encodeURIComponent($detail.val().trim())
+    var destination = encodeURIComponent($address.val().trim())
+    var reasonType = encodeURIComponent($reason.html())
     var data = {
-      address: encodeURIComponent($address.val().trim()),
-      reason: $reason.html(),
-      detail: encodeURIComponent($detail.val().trim()),
-      'start-date': $startDate.html(),
-      'start-time': $startTime.html(),
-      'end-date': $endDate.html(),
-      'end-time': $endTime.html()
+      destination: destination,
+      reasonType: reasonType,
+      outStartDate: $startDate.html(),
+      outStartHour: $startTime.html(),
+      outEndDate: $endDate.html(),
+      outEndHour: $endTime.html()
     }
-    console.log(JSON.stringify(data))
+    /*
+    * console.dir(data)
+    * */
+    /*
+    * 数据校验
+    * */
+    var errMsg = validate.validate({
+      destination: destination,
+      reasonType: reasonType,
+      billTitle: billTitle
+    }, {
+      destination: {
+        type: 'required',
+        message: '请填写外出地点'
+      },
+      reasonType: {
+        type: 'required',
+        message: '请选择外出原因'
+      },
+      billTitle: {
+        type: 'required',
+        message: '请选择外出事由'
+      }
+    })
+    /*
+    * 校验时间
+    * */
+    if (!errMsg) {
+      var startDateTime = data['outStartDate'] + '' + data['outStartHour']
+      var endDateTime = data['outEndDate'] + '' + data['outEndHour']
+      if (!validate.compareDate(endDateTime, startDateTime)) {
+        errMsg = '外出起始时间不能大于外出结束时间'
+      }
+    }
+    if (errMsg) {
+      alert(errMsg)
+    } else {
+      server.post(api.goout_request, {billTitle: billTitle, customData: data}).done(function (res) {
+        if (res && res.result === status.OK) {
+          alert('提交成功')
+          return
+        }
+      })
+    }
+    $(this).removeClass('disabled')
   })
 })
 

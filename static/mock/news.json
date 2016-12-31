@@ -1,21 +1,36 @@
 {
-  "status": 1,
-  "redirect": "http://www.baidu.com",
-  "list": [
+  "result": 1,
+  "items": [
     {
-      "link": "http://www.baidu.com",
+      "type": "1",
       "title": "非凡行者非凡路--计教育事业部事业部事业部事业部",
-      "build-date": "20160502 12:23"
+      "created": "2016-05-02 12:23",
+      "author": "林一凡",
+      "url": "http://wwww.baidu.com"
     },
     {
-      "link": "http://www.baidu.com",
+      "type": "1",
       "title": "非凡行者非凡路--计教育事业部事业部事业部事业部",
-      "build-date": "20160502 12:23"
+      "created": "2016-05-02 12:23",
+      "author": "林一凡",
+      "url": "http://wwww.baidu.com"
     },
     {
-      "link": "http://www.baidu.com",
+      "type": "1",
       "title": "非凡行者非凡路--计教育事业部事业部事业部事业部",
-      "build-date": "20160502 12:23"
+      "created": "2016-05-02 12:23",
+      "author": "林一凡",
+      "url": "http://wwww.baidu.com"
+    },
+    {
+      "type": "1",
+      "title": "非凡行者非凡路--计教育事业部事业部事业部事业部",
+      "created": "2016-05-02 12:23",
+      "author": "林一凡",
+      "url": "http://wwww.baidu.com"
     }
-  ]
+  ],
+  "error" : {
+    "authUrl": "http://www.baidu.com"
+  }
 }

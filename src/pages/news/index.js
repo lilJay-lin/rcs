@@ -25,11 +25,12 @@ $(function () {
   /*
    * 加载数据
    * */
-  server.get(api.news).done(function (res) {
-    if (res && res.status === status.OK && res.list) {
-      var list = res.list
-      if (list.length > 0) {
-        $cnt.html(util.renderArray($('#news-item-tpl').html(), list))
+  var strCreated = util.getDateTime()
+  server.post(api.news, {strCreated: strCreated}).done(function (res) {
+    if (res && res.result === status.OK && res.items) {
+      var items = res.items
+      if (items.length > 0) {
+        $cnt.html(util.renderArray($('#news-item-tpl').html(), items))
         return
       }
       check()

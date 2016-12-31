@@ -1,28 +1,36 @@
 {
-  "status": 1,
-  "redirect": "http://www.baidu.com",
-  "list": [
+  "result": 1,
+  "items": [
     {
-      "id": "201412312",
-      "name": "张学友",
-      "department": "互联网事业部/数字电商业务部/产品部",
-      "reason": "外出会议",
-      "destination": "南方基地",
-      "start-date": "2016-12-15",
-      "start-time": "09:00:00",
-      "end-date": "2016-12-15",
-      "end-time": "12:00:00"
+      "processID": "201412312",
+      "billNo": "20141231200000",
+      "billEmpName": "张学友",
+      "status": "审批通过",
+      "billDep": "互联网事业部/数字电商业务部/产品部",
+      "reasonType": "外出会议",
+      "billTitle": "南方基地南方基地南方基地南方基地",
+      "serverId": "7",
+      "outStartDate": "2016-12-15",
+      "outStartHour": "09:00:00",
+      "outEndDate": "2016-12-15",
+      "outEndHour": "12:00:00"
     },
     {
-      "id": "201412312",
-      "name": "张学友",
-      "department": "互联网事业部/数字电商业务部/产品部",
-      "reason": "外出会议",
-      "destination": "南方基地",
-      "start-date": "2016-12-15",
-      "start-time": "09:00:00",
-      "end-date": "2016-12-15",
-      "end-time": "12:00:00"
+      "processID": "201412312",
+      "billNo": "20141231200000",
+      "billEmpName": "张学友",
+      "status": "审批通过",
+      "billDep": "互联网事业部/数字电商业务部/产品部",
+      "reasonType": "外出会议",
+      "destination": "南方基地南方基地南方基地南方基地",
+      "serverId": "7",
+      "outStartDate": "2016-12-15",
+      "outStartHour": "09:00:00",
+      "outEndDate": "2016-12-15",
+      "outEndHour": "12:00:00"
     }
-  ]
+  ],
+  "error" : {
+    "authUrl": "http://www.baidu.com"
+  }
 }

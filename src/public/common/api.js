@@ -5,25 +5,38 @@ var dev = {
   /*
    * 查询外出申请列表
    * */
-  goout: '/mock/static/goout.json',
+  goout: '/static/mock/goout.json',
   /*
    * 审批外出申请
    * */
-  resolve_goout: '/mock/static/resolve_goout.json?id=',
+  resolve_goout: '/static/mock/resolve_goout.json?id=',
   /*
    * 我发起的
    * */
-  istart: '/mock/static/istart.json',
+  istart: '/static/mock/istart.json',
   /*
   * 新闻列表
   * */
-  news: '/mock/static/news.json'
+  news: '/static/mock/news.json',
+  /*
+  提交外出申请
+  * */
+  goout_request: '/static/mock/goout_request.json'
 }
-var prod = {}
+var prod = {
+  goout: '',
+  resolve_goout: '',
+  istart: '',
+  news: '',
+  goout_request: ''
+}
 
 /*
  eslint-disable no-undef
  */
+/*
+ 兼容开发和线上环境，编译时自动替换
+* */
 var list = PRODUCTION ? prod : dev
 module.exports = {
   list: list,

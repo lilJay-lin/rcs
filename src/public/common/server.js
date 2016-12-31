@@ -11,13 +11,13 @@ function deal (options) {
     /*
      请求成功
      */
-    if (res.status === status.OK) {
+    if (res.result === status.OK) {
       deferred.resolve(res)
-    } else if (res.status === status.UN_AUTHOR) {
-      window.location.href = res.redirect
+    } else if (res.result === status.UN_AUTHOR) {
+      window.location.href = res.error.authUrl
     } else {
       alert(errMsg)
-      deferred.resolve(res)
+      deferred.reject(res)
     }
   }).fail(function () {
     alert(errMsg)
@@ -26,17 +26,33 @@ function deal (options) {
   return deferred
 }
 module.exports = {
-  get: function (url) {
+  get: function (url, data) {
+    var obj = null
+    if (data) {
+      obj = data
+    }
     return deal({
       url: url,
+      data: obj,
       cache: false,
       timeout: timeout,
       method: 'GET'
     })
   },
-  post: function (url) {
+  post: function (url, data) {
+    /*
+     eslint-disable no-undef
+     */
+    if (PRODUCTION === false) {
+      return this.get(url, data)
+    }
+    var obj = null
+    if (data) {
+      obj = data
+    }
     return deal({
       url: url,
+      data: obj,
       cache: false,
       dataType: 'json',
       timeout: timeout,
