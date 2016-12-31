@@ -84,7 +84,9 @@ $(function () {
   * 填写事由，滑动到底部，防止键盘遮挡
   * */
   $('.js-detail').on('focus', function () {
-    $pageContent.scrollTop($applyContent.height() - $pageContent.height())
+    setTimeout(function () {
+      $pageContent.scrollTop($applyContent.height() - $pageContent.height())
+    }, 200)
   })
 
   /*
