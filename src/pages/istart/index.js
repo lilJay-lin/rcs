@@ -5,23 +5,24 @@ require('less/rcs.less')
 var $ = require('jquery')
 var server = require('common/server')
 var util = require('common/util')
-var $cnt = $('.goout-container')
 var api = require('common/api').list
 var status = require('common/api').status
 var none = require('../_ejs/none.ejs')
-/*
- * 检查是否还有数据显示
- * */
-function check () {
-  if ($cnt.find('.goout-item').length === 0) {
-    $cnt.html(none({}))
-  }
-}
 
 /*
 * 页面加载完成开始逻辑
 * */
 $(function () {
+  var $cnt = $('.goout-container')
+  /*
+   * 检查是否还有数据显示
+   * */
+  function check () {
+    if ($cnt.find('.goout-item').length === 0) {
+      $cnt.html(none({}))
+    }
+  }
+
   /*
   * 加载数据
   * */

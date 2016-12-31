@@ -7,16 +7,19 @@ var server = require('common/server')
 var api = require('common/api').list
 var status = require('common/api').status
 var validate = require('common/validate')
-var $address = $('.js-address')
-var $reason = $('.js-reason')
-var $detail = $('.js-detail')
-var $startDate = $('.js-start-date')
-var $startTime = $('.js-start-time')
-var $endDate = $('.js-end-date')
-var $endTime = $('.js-end-time')
 var date = new Date()
 var curDate = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate()
 $(function () {
+  var $pageContent = $('.page-content')
+  var $applyContent = $('.apply-container')
+  var $address = $('.js-address')
+  var $reason = $('.js-reason')
+  var $detail = $('.js-detail')
+  var $startDate = $('.js-start-date')
+  var $startTime = $('.js-start-time')
+  var $endDate = $('.js-end-date')
+  var $endTime = $('.js-end-time')
+
   /*
   设置时间控件语言
   */
@@ -75,6 +78,13 @@ $(function () {
   * */
   $('.js-apply-reason .js-cancel').on('click', function () {
     toggleReason()
+  })
+
+  /*
+  * 填写事由，滑动到底部，防止键盘遮挡
+  * */
+  $('.js-detail').on('focus', function () {
+    $pageContent.scrollTop($applyContent.height() - $pageContent.height())
   })
 
   /*
