@@ -1,0 +1,1890 @@
+﻿/*Moss模板页样式*/
+#NavigationTr1,#NavigationTr2,#NavigationTr3,#TopSpaceMiddle,#LeftTableHide,.mainBgLine{
+	display:none;
+}
+#MainTable{
+	width:1003px;
+	text-align:left;
+}
+.TopSpaceL{
+	background-color:#EFEFEF;
+	vertical-align:middle;
+}
+.TopSpaceL2{
+	background-color:#EFEFEF;
+}
+.TopSpaceTitle{
+	font-size:13px;
+}
+.TopSpaceR{
+	background-color:white;
+	border-bottom-style:solid; 
+	border-bottom-width: 2px; 
+	border-bottom-color: #6CC5D7;
+	vertical-align:top;
+	font-size:13px;
+	font-family:微软雅黑;
+	color:black;
+	text-decoration:none;
+}
+.TopSpaceR .input1{
+	width:230px;
+	margin:10px 5px 10px 0px;
+	height:23px;
+	border:1px solid #636363;
+	background-color:white;
+}
+.TopSpaceR .button2{
+	 background-image:url('/_layouts/images/MossImgs/wfsearch.jpg') !important;
+	 height:24px;
+	 width:61px;
+	 border:0px;
+}
+.MainNavigation{
+	height:470px;
+	/*padding-left:5px;*/
+	background-color:#EFEFEF;
+	vertical-align:top;
+}
+#PageNavigationTitle{
+	color:#666666;
+	font-family:华文宋体;
+	padding-top:6px;
+	padding-left:10px;
+	font-size:12px;
+}
+#PageNavigationTitle a{
+	color:#3966BF;
+	text-decoration:none;
+	font-family:华文宋体;
+}
+.WelcomeInfo{
+	padding-left:10px;
+	color:#2A4666;
+	font-size:13px;
+	text-align:right;
+	vertical-align:top;
+	padding:10px;
+}
+.ICO{
+	background-image:url('/_layouts/IMAGES/MossImgs/ico.gif') ;
+
+		background-repeat:repeat-y;
+}
+.elang a:link,.elang a:visited,.elang a:active{color:#2A4666;font-size: 12px;text-decoration: none;font-weight:bold;padding-right:6px;padding-left:6px;}
+#CusNavigtn{
+	padding-top:11px;
+	vertical-align:top;
+	width:100px;
+	padding-left:5px;
+}
+#CusNavigtn a{
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#666666;
+	padding-left:5px;
+	padding-right:5px;
+}
+#CusNavigtn a:hover{
+	border: 1px solid #6f9dd9;
+	background-color:#FFC856;
+}
+.NewsDisplayWebPart{
+	padding-left:8px;
+	padding-top:12px;
+}
+.NewsDisplayHideWebPart{
+	display:none;
+}
+.MainTitleImg{
+	
+}
+.MainLeftTitle1{
+	font-size:15px;
+	font-weight:bold;
+	color:#F97C22;
+	font-family:宋体;
+	padding-left:12px;
+	letter-spacing:1px;
+}
+.MainLeftTitleContent1{
+	border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #8F8F8F;
+	padding-top:7px;
+}
+#MainLeftTable2 a{
+	color:black;
+	text-decoration:none;
+	font-size:12px;
+}
+.MainLeftTitleContent2{
+	border-bottom-style: dotted; border-bottom-width: 1px; border-bottom-color: #8F8F8F;
+	padding-top:7px;
+}
+#MainRightTable1{
+	border:0px;
+	height:127px;
+	width:180px;
+	padding-bottom:3px;
+	padding-top:3px;
+	padding-left:6px;
+	padding-right:4px;
+}
+#MainRightTable1 a{
+	color:black;
+	text-decoration:none;
+	font-size:12px;
+}
+.MainRightTitle1{
+	font-size:15px;
+	font-weight:bold;
+	color:black;
+	font-family:宋体;
+	padding-left:13px;
+	letter-spacing:1px;
+	vertical-align:top;
+}
+.MainRightContent1{
+	font-size:12px;
+	color:black;
+	font-family:宋体;
+	padding-left:15px;
+	vertical-align:top;
+}
+.OnePageImg
+{
+	display:none;
+}
+.ms-bodyareacell{
+	width:743px;
+}
+
+/*自定义顶部导航*/
+.NavgLeftBg{
+	background-image:url('/_layouts/images/mossimgs/navLeftbg2.jpg');
+	background-repeat:no-repeat;
+	width:7px;
+}
+.NavgRightBg{
+	background-image:url('/_layouts/images/mossimgs/navRightbg2.jpg');
+	background-repeat:no-repeat;
+	width:7px;
+}
+.AspMenuTdCus{
+	background-image:url('/_layouts/images/mossimgs/navbg2.jpg');
+	background-repeat:repeat-x;
+	height:45px;
+	text-align:left;
+	font-size:12px;
+	padding-bottom:5px;
+	padding-left:50px;
+}
+.AspMenuTdCus2{
+	background-image:url('/_layouts/images/mossimgs/navbg2.jpg');
+	background-repeat:repeat-x;
+	height:50px;
+	text-align:right;
+	vertical-align:bottom;
+	font-size:12px;
+}
+.NavgOutLeftBg{
+	background-image:url('/_layouts/images/mossimgs/NavgOutLeftBg.jpg');
+	background-repeat:repeat-x;
+}
+.NavgOutRightBg{
+	background-image:url('/_layouts/images/mossimgs/NavgOutRightBg.jpg');
+	background-repeat:repeat-x;
+}
+#siteNavigationBg{
+	width:100px;
+	height:35px;
+	font-size:12px;
+	text-align:left;
+}
+#siteNavigationBg a{
+	text-decoration:none;
+	font-weight:bold;
+	color:#585858;
+}
+.MenuItemLeftStyleCus{
+	
+}
+.MenuItemStyleCus{
+	border-right-style:solid; 
+	border-right-width: 1px; 
+	border-right-color:#CCCCCC;
+	font-size:12px;
+	height:18px;
+	font-weight:bold;
+	color:#585858;
+	padding-right:4px;
+	padding-left:4px;
+	padding-top:2px;
+	letter-spacing:2px;
+}
+.HoverStyleCus{
+	border-bottom-style: solid; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #F9F9F9; 
+	background-color: #F9F9F9;
+	font-size:12px;
+	height:18px;
+	font-weight:bold;
+	color:#FF6600;
+	padding-right:4px;
+	padding-left:4px;
+	padding-top:2px;
+	letter-spacing:2px;
+}
+.SelectedStyleCus{
+	
+	padding-right:4px;
+	padding-left:4px;
+	font-size:12px;
+	color:black;
+}
+/*End自定义顶部导航*/
+/*日历控件样式*/
+#basis {
+     display:inline;
+     position:relative;
+     }
+#calender {
+     position:absolute;
+     top:30px;
+     left:0;
+     width:220px;
+     background-color:#F2F8FF;
+     border:1px solid #6F9DD9;
+     padding:10px;
+     z-index:10;
+     }
+#control {
+     text-align:center;
+     margin:0 0 5px 0;
+     border:1px,#F2F8FF,solid;
+     }
+#control select {
+     font-family:&#23435;&#20307;, Arial, Helvetica, sans-serif;
+     font-size:12px;
+     margin:0 5px;
+     vertical-align:middle;
+     }
+#calender .controlPlus {
+     padding:0 5px;
+     text-decoration:none;
+     color:red;
+     }
+#calender table {
+     empty-cells: show;
+     width:100%;
+     font-size:12px;
+     table-layout:fixed;
+     color:maroon;
+     }
+#calender .weekdays td{
+     text-align:right;
+     padding:1px 5px 1px 1px;
+     color:black;
+     }
+#calender .week td {
+     text-align:right;
+     cursor:pointer;
+     padding:1px 4px 1px 0;
+     }
+#calender .week .today { 
+     background-color:#ccf;
+     border-color:#ccf;
+     }
+#calender .week .holiday {
+     font-weight: bold;
+     }
+#calender .week .hoverEle {
+     border-color:#666;
+     background-color:#99f;
+     color:#000;
+     }
+/*会议资源预定*/
+.linkbtStyle
+{
+	font-size:12px;
+	text-decoration:none;
+	font-weight:bold;
+	letter-spacing:2px;
+	padding-right:10px;
+	padding-left:10px;
+	height:17px;
+	vertical-align:middle;
+	color:black;
+	border: 2px outset #CCCCCC; 
+	background-color: #CCCCFF;
+	width:56px;
+	margin-right:10px;
+}
+.dateTextStyle
+{
+	height:18px;
+	width:118px;
+	text-align:center;
+	border:1px solid #7F9DB9;
+	margin-right:10px;
+	color:#800000;
+}
+.runserTable
+{
+	width:100%;
+	height:100%;
+	font-size:12px;
+	color:black;
+}
+.runserTableRow
+{
+	text-align:right;
+	background-color:#EFEFEF;
+}
+.runserTableCell1
+{
+	font-size:12px;
+	color:Black;
+	text-align:left;
+	padding:5px;
+}
+.runserTableCell2
+{
+	width:2%;
+}
+#MeetTable{
+	width:100%;
+	height:100%;
+	font-size:12px;
+	color:black;
+	border-left-style: solid; 
+	border-left-width: 1px; 
+	border-left-color: #ADD1FF; 
+	border-bottom-style: solid; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #ADD1FF;
+}
+#MeetTable a
+{
+	font-size:12px;
+	color:black;
+	text-decoration:none;
+}
+#MeetTable td
+{
+	height:24px;
+	text-align:center;
+	border-right-style: solid; 
+	border-right-width: 1px; 
+	border-right-color: #ADD1FF; 
+	border-top-style: solid; 
+	border-top-width: 1px; 
+	border-top-color: #ADD1FF;
+}
+.MeetBg{
+	background-color:#FFCB13;
+}
+/*欢迎信息*/
+#dateWecmTable{
+	font-size:12px;
+	color:Black;
+	margin-top: 10px;
+}
+#dateWecmTable td{
+	height:22px;
+}
+.dateWecmTd1{
+	width:12%;
+}
+.dateWecmTd2{
+	width:50%;
+	vertical-align:top;
+}
+.dateWecmTd3{
+	width:38%;
+	vertical-align:top;
+}
+.dateWecmTd4{
+	width:10%;
+}
+.currUserFont{}
+/*首页下拉框样式*/
+.MainDDList
+{
+	border:0px;
+	width:150px;
+}
+.TopMessageZone{
+background-image:url('TopMessageBg.jpg');
+}
+.TopMessageZone marquee{
+	background-color:transparent !important;
+	background-image:none;
+}
+.HomeContentZone{
+	background-color:#EEF3F7;
+}
+/*左边导航溢出*/
+.LeftNavigationYC{
+	overflow: auto;width: 155px;height:500px;
+}
+.LeftNavigationYC2{
+	overflow: auto;width: 150px;height:500px;
+}
+.LeftNavigationYC3{
+	overflow: auto;width: 100%;height:230px;
+}
+/*End左边导航溢出*/
+.LeftNavgBorderStyle
+{
+	border: 1px solid #C6C6C6;
+	height:25px;	
+	width:155px;
+	background-image:url('/_layouts/IMAGES/MossImgs/page2bg.jpg');
+	background-repeat:repeat-x;
+	padding-top:1px;
+}
+
+
+#manageStyle{
+	color:#FC7E2A;
+}
+
+#manageStyle a,#manageStyle a:visited{
+	color:#FC7E2A;
+}
+.BottomLineLeftBg{
+	width:5px;
+	height:5px;
+	background-image:url('/_layouts/IMAGES/MossImgs/BottomLineLeftBg.jpg');
+	background-repeat:no-repeat;
+}
+.BottomLineMiddleBg{
+	height:5px;
+	background-image:url('/_layouts/IMAGES/MossImgs/BottomLineMiddleBg.jpg');
+	background-repeat:repeat-x;
+}
+.BottomLineRightBg{
+	width:5px;
+	height:5px;
+	background-image:url('/_layouts/IMAGES/MossImgs/BottomLineRightBg.jpg');
+	background-repeat:no-repeat;
+}
+
+
+/*公司通讯录查看、编辑页面*/
+.EditTable{
+	border:0px;
+	width:100%;
+	height:100%;
+	background-color:White;
+}
+.EditBtn{
+	text-align:right;
+	padding-bottom:8px;
+	padding-top:20px;
+	padding-right:40px;
+}
+.EditBtn2{
+	text-align:right;
+	padding-bottom:20px;
+	padding-top:8px;
+	padding-right:40px;
+}
+.EditLinkBtn{
+	background-image:url('/_layouts/images/mossimgs/EditBg.jpg');
+	height:22px;
+	border: 1px solid #83B0EC;
+	padding-left:10px;
+}
+.EditFont{
+	font-size:12px;
+	color:#3966BF;
+	padding-left:3px;
+	text-decoration:none;
+}
+.EditImg
+{
+	vertical-align:bottom;
+	margin-top:2px
+}
+.EditLeftTitle{
+	padding-left:10px;
+	width:25%;
+	font-weight:bold;
+	color:#525252;
+	font-size:12px;
+	border-top-style:solid; 
+	border-top-width:1px; 
+	border-top-color:#D8D8D8;
+	height:27px;
+}
+.EditLeftContent{
+	padding-left:5px;
+	padding-top:5px;
+	padding-right:20px;
+	padding-bottom:5px;
+	width:75%;
+	font-size:12px;
+	border-top-style:solid; 
+	border-top-width:1px; 
+	border-top-color:#D8D8D8;
+	background-color:#EBF3FF;
+}
+.EditLeftTitle2{
+	padding-left:10px;
+	width:25%;
+	font-weight:bold;
+	color:#525252;
+	font-size:12px;
+	border-top-style:solid; 
+	border-top-width:1px; 
+	border-top-color:#D8D8D8;
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+	border-bottom-color:#D8D8D8;
+	height:27px;
+}
+.EditLeftContent2{
+	padding-left:5px;
+	padding-top:5px;
+	padding-right:20px;
+	padding-bottom:5px;
+	width:75%;
+	font-size:12px;
+	border-top-style:solid; 
+	border-top-width:1px; 
+	border-top-color:#D8D8D8;
+	border-bottom-style:solid; 
+	border-bottom-width:1px; 
+	border-bottom-color:#D8D8D8;
+	background-color:#EBF3FF;
+}
+
+
+
+/*首页标准框*/
+.TopLinkStyleBack{
+	color:#000000;
+	text-decoration:none;
+	font-size:14px;
+	letter-spacing:2px;	
+}
+.TopLinkStyleBack a:visited
+{
+	color:#000000;
+}
+.TopLinkStyle{
+	color:white;
+	text-decoration:none;
+	font-size:14px;
+	letter-spacing:2px;
+}
+
+.leftHight{
+	height:10px;
+}
+.leftHight1{
+	height:8px;
+}
+.leftHight2{
+	height:5px;
+}
+.leftHight3{
+	height:10px;
+}
+.topLLineImg{
+	background-image:url('/_layouts/IMAGES/MossImgs/topLLine.gif');
+	width:3px;
+	height:3px;
+	background-repeat:no-repeat;
+}
+.topMLineImg{
+	background-image:url('/_layouts/IMAGES/MossImgs/topMLine.gif');
+	height:3px;
+}
+.topRLineImg{
+	background-image:url('/_layouts/IMAGES/MossImgs/topRLine.gif');
+	width:3px;
+	height:3px;
+	background-repeat:no-repeat;
+}
+
+.DateTopLeft{
+	background-image:url('/_layouts/IMAGES/MossImgs/DateTopLeft.jpg');
+	width:5px;
+	height:5px;
+	background-repeat:no-repeat;
+}
+.DateTopMiddle{
+	background-image:url('/_layouts/IMAGES/MossImgs/DateTopMiddle.jpg');
+	height:5px;
+}
+.DateTopRight{
+	background-image:url('/_layouts/IMAGES/MossImgs/DateTopRight.jpg');
+	width:5px;
+	height:5px;
+	background-repeat:no-repeat;
+}
+.DateMiddleLeft{
+	background-image:url('/_layouts/IMAGES/MossImgs/DateMiddleLeft.jpg');
+	width:5px;
+	background-repeat:repeat-y;
+}
+.DateMiddleMiddle{
+	font-size:12px;
+	height:70px;
+	vertical-align:top;
+	background-color:white;
+}
+.DateMiddleRight{
+	background-image:url('/_layouts/IMAGES/MossImgs/DateMiddleRight.jpg');
+	width:5px;
+	background-repeat:repeat-y;
+}
+.DateBottomLeft{
+	background-image:url('/_layouts/IMAGES/MossImgs/DateBottomLeft.jpg');
+	width:5px;
+	height:5px;
+	background-repeat:no-repeat;
+}
+.DateBottomMiddle{
+	background-image:url('/_layouts/IMAGES/MossImgs/DateBottomMiddle.jpg');
+	height:5px;
+}
+.DateBottomRight{
+	background-image:url('/_layouts/IMAGES/MossImgs/DateBottomRight.jpg');
+	width:5px;
+	height:5px;
+	background-repeat:no-repeat;
+}
+
+
+
+.leftZoneImg{
+	background-image:url('/_layouts/IMAGES/MossImgs/leftZone.jpg');
+	width:5px;
+	height:24px;
+	background-repeat:no-repeat;
+}
+.middleZoneImg{
+	background-image:url('/_layouts/IMAGES/MossImgs/middleZone.jpg');
+	width:230px;
+	text-align:left;
+	padding-left:18px;
+}
+.rightZoneImg{
+	background-image:url('/_layouts/IMAGES/MossImgs/rightZone.jpg');
+	width:5px;
+	background-repeat:no-repeat;
+}
+.leftLinebg{
+	background-image:url('/_layouts/IMAGES/MossImgs/leftLine.jpg');
+	width:5px;
+	background-repeat:repeat-y;
+}
+.middleCtZone{
+	font-size:12px;
+	height:70px;
+	vertical-align:top;
+	background-color:white;
+}
+.middleCtZone1{
+	font-size:12px;
+	height:208px;
+	vertical-align:top;
+	background-color:white;
+}
+.middleCtZone2{
+	font-size:12px;
+	height:106px;
+	vertical-align:top;
+	background-color:white;
+}
+.middleCtZone3{
+	font-size:12px;
+	height:100px;
+	vertical-align:top;
+	background-color:white;
+
+}
+.middleCtZone4{
+	font-size:12px;
+	height:117px;
+	vertical-align:top;
+	background-color:white;
+
+}
+.middleCtZone41{
+	font-size:12px;
+	
+	vertical-align:top;
+	background-color:white;
+
+}
+.middleCtZone41 td{
+	text-align:left !important;
+	padding-left:5px;
+}
+.middleCtZone7{
+	font-size:12px;
+	height:30px;
+	vertical-align:top;
+	background-color:white;
+
+}
+.myselfMail{
+	
+}
+.middleCtZone5{
+	font-size:12px;
+	height:130px;
+	vertical-align:top;
+	background-color:white;
+	padding-left:5px;
+}
+.middleCtZone51{
+	font-size:12px;
+	height:146px;
+	vertical-align:top;
+	background-color:white;
+}
+.middleCtZone6{
+	font-size:12px;
+	height:170px;
+	vertical-align:top;
+	background-color:white;
+}
+.rightLineBg{
+	background-image:url('/_layouts/IMAGES/MossImgs/rightLine.jpg');
+	width:5px;
+	background-repeat:repeat-y;
+}
+.bottomLLineBg{
+	background-image:url('/_layouts/IMAGES/MossImgs/bottomLLine.jpg');
+	width:5px;
+	height:5px;
+	background-repeat:no-repeat;
+}
+.bottomMLineBg{
+	background-image:url('/_layouts/IMAGES/MossImgs/bottomMLine.jpg');
+	height:5px;
+}
+.bottomRLineBg{
+	background-image:url('/_layouts/IMAGES/MossImgs/bottomRLine.jpg');
+	width:5px;
+	height:5px;
+	background-repeat:no-repeat;
+}
+.siteLoadleft{
+	background-image:url('/_layouts/IMAGES/MossImgs/siteLoadleft.jpg');
+	width:3px;
+	background-repeat:no-repeat;
+}
+.siteLoadMiddle{
+	background-color:#EAEEF1;
+	height:31px;
+	margin-top:10px;
+}
+.siteLoadright{
+	background-image:url('/_layouts/IMAGES/MossImgs/siteLoadright.jpg');
+	width:3px;
+	background-repeat:no-repeat;
+}
+.siteLoadFont{
+	color:#BD4604;
+	font-size:14px;
+	letter-spacing:2px;
+	padding-left:10px;
+	padding-right:1px;
+	font-weight:bold;
+}
+.serchStyle{
+	height:35px;
+	font-size:12px;
+}
+#MainLeftTable1 a{
+	color:black;
+	text-decoration:none;
+	letter-spacing:1px;
+	font-size:12px;
+}
+#MainLeftTable3{
+	padding-top:4px;
+}
+#MainLeftTable3 a{
+	color:black;
+	text-decoration:none;
+	letter-spacing:1px;
+	font-size:12px;
+	padding-left:13px;
+}
+.mainContentLine{
+	height:27px;
+	padding-left:10px;
+}
+#mainCenterDataTable{
+	width:100%;
+	border:0px;
+	font-size:12px;
+	border-bottom-style: dotted; border-bottom-width: 2px; border-bottom-color: #C1C1C1;
+}
+#mainCenterDataTable a{
+	color:black;
+	font-size:12px;
+	height:16px;
+}
+.mainCenterDataTd1{
+	height:39px;
+	text-align:right;
+	width:9%;
+}
+.mainCenterDataTd2{
+	width:82%;
+	font-size:16px;
+	color:#6AB6CE;
+	font-weight:bold;
+	padding-top:0px;
+}
+.mainCenterDataTd3{
+	width:9%;
+	text-align:right;
+	padding-right:5px;
+	padding-top:10px;
+}
+.mainTitleFont{font-size:16px;padding-left:7px;letter-spacing:2px}
+.GridViewItemStyle{width:100%;border:1px solid #F6F6F6;vertical-align:top;padding-bottom:6px}
+#newGridView{padding-top:10px;padding-right:10px;}
+#newGridView a{font-size:12px;color:black;height:18px}
+#GridViewDiv{width:100%;padding:4px}
+#GridViewDiv a{font-size:12px;color:black;height:22px;vertical-align:bottom}
+#welcomeNewFont a{font-size:12px;color:black;height:24px;padding-top:5px}
+#welcomeNewFont td{border:1px solid #F6F6F6;vertical-align:middle;}
+
+.SearchTopLeft{
+	width:5px;
+	height:5px;
+	background-image:url('SearchTopLeft.jpg');
+	background-repeat:no-repeat;
+}
+.SearchTopMiddle{
+	background-image:url('SearchTopMiddle.jpg');
+	background-repeat:repeat-x;
+}
+.SearchTopRight{
+	width:5px;
+	height:5px;
+	background-image:url('SearchTopRight.jpg');
+	background-repeat:no-repeat;
+}
+.SearchMiddleLeft{
+	background-image:url('SearchMiddleLeft.jpg');
+	background-repeat:repeat-y;
+}
+.SearchMiddleMiddle{
+	height:45px;
+	background-color:white;
+	padding-left:7px;
+}
+.SearchMiddleRight{
+	background-image:url('SearchMiddleRight.jpg');
+	background-repeat:repeat-y;
+}
+.SearchBottomLeft{
+	width:5px;
+	height:5px;
+	background-image:url('SearchBottomLeft.jpg');
+	background-repeat:no-repeat;
+}
+.SearchBottomMiddle{
+	background-image:url('SearchBottomMiddle.jpg');
+	background-repeat:repeat-x;
+}
+.SearchBottomRight{
+	width:5px;
+	height:5px;
+	background-image:url('SearchBottomRight.jpg');
+	background-repeat:no-repeat;
+}
+
+
+.MailTopLeft{
+	width:5px;
+	height:5px;
+	background-image:url('MailTopLeft.jpg');
+	background-repeat:no-repeat;
+}
+.MailTopMiddle{
+	background-image:url('MailTopMiddle.jpg');
+	background-repeat:repeat-x;
+}
+.MailTopRight{
+	width:5px;
+	height:5px;
+	background-image:url('MailTopRight.jpg');
+	background-repeat:no-repeat;
+}
+.MailMiddleLeft{
+	background-image:url('MailMiddleLeft.jpg');
+	background-repeat:repeat-y;
+}
+.MailMiddleMiddle{
+	height:45px;
+	background-color:white;
+	padding-left:7px;
+}
+.MailMiddleRight{
+	background-image:url('MailMiddleRight.jpg');
+	background-repeat:repeat-y;
+}
+.MailBottomLeft{
+	width:5px;
+	height:5px;
+	background-image:url('MailBottomLeft.jpg');
+	background-repeat:no-repeat;
+}
+.MailBottomMiddle{
+	background-image:url('MailBottomMiddle.jpg');
+	background-repeat:repeat-x;
+}
+.MailBottomRight{
+	width:5px;
+	height:5px;
+	background-image:url('MailBottomRight.jpg');
+	background-repeat:no-repeat;
+}
+
+
+.mainIco{
+	height:18px;
+	
+}
+#mainContentLineTable a{
+	color:black;
+	text-decoration:none;
+	letter-spacing:1px;
+	padding-left:5px;
+	font-size:12px;
+}
+.mainContentLine1{
+	height:27px;
+	padding-left:18px;
+}
+.mainIco1{
+	height:19px;
+	width:19px;
+	vertical-align:middle;
+}
+
+/*首页文档中心*/
+#DocumentTableStyle a{
+	color:black;
+	text-decoration:none;
+	letter-spacing:1px;
+	font-size:12px;
+}
+.DocumentTdStyle{
+	border-bottom-style: dotted; border-bottom-width: 1px; border-bottom-color: #8F8F8F;
+	height:25px;
+	padding-left:18px;
+}
+.DocumentFontStyle{
+	border-bottom-style: dotted; border-bottom-width: 1px; border-bottom-color: #8F8F8F;
+	text-align:right;padding-right:3px;color:maroon;
+}
+
+/*网站集首页*/
+.MainTable{
+	height:100%;
+	border:0px;
+	background-color:#EEF3F7;
+}
+.MainLeft{
+	width:209px;
+	background-color:#EFEFEF;
+	vertical-align:top;
+	text-align:left;
+	padding-top:2px;
+}
+.MainLeft1{
+	vertical-align:top;
+	text-align:left;
+	width:225px;
+}
+.LeftLContentZone{
+ background-image:url('LeftLContentBg.jpg');
+ width:5px;
+ height:100%;
+}
+.LeftMContentZone{
+padding:13px 0px 0px 10px;
+width:200px;
+background-color:#EDEDED;
+}
+.LeftMContentZoneCEO{
+padding:13px 0px 0px 10px;
+width:230px;
+background-color:#EDEDED;
+}
+
+.LeftRContentZone{
+ background-image:url('LeftRContentBg.jpg');
+ width:10px;
+ height:100%;
+}
+.RightLContentZone{
+ background-image:url('RightLContentBg.jpg');
+ width:12px;
+ height:100%;
+}
+.RightMContentZone{
+padding:13px 10px 0px 0px;
+width:230px;
+background-color:#EDEDED;
+}
+.RightRContentZone{
+ background-image:url('RightRContentBg.jpg');
+ width:5px;
+ height:100%;
+}
+
+.MLDiv1{
+	border-right: 1px solid #C4C4C4;
+	border-top: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	width:202px;
+		height:145px;
+	background-image:url('/_layouts/IMAGES/MossImgs/LBg1.jpg');
+		background-repeat:repeat-x;
+		background-color:white;
+		margin-bottom:5px;
+		padding-top:8px;
+		padding-bottom:4px;
+}
+.MLDiv2{
+	border-right: 1px solid #C4C4C4;
+	border-top: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+	width:202px;
+		height:217px;
+	background-image:url('/_layouts/IMAGES/MossImgs/LBg2.jpg');
+		background-repeat:repeat-x;
+		background-color:white;
+		padding-top:8px;
+		padding-bottom:4px;
+}
+.MLDiv3{
+	height:74px;
+	padding-left:21px;
+	padding-right:21px;
+	padding-bottom:7px;
+}
+.MLDiv3Span1{
+	width:126px;
+	font-size:14px;
+	font-weight:bold;
+	margin-top:15px;
+}
+.MLDiv3Span2{
+	height:26px;
+	vertical-align:middle;
+}
+#MLDiv3Div{
+	height:29px;
+	width:167px;
+	background-image:url('/_layouts/IMAGES/MossImgs/gstxl.gif');
+	text-align:center;
+	background-repeat:no-repeat;
+	margin-top:13px;
+	padding-top:6px;
+}
+#MLDiv3Div a{
+	color:#FD6B08;
+	font-size:18px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+
+.MainMiddle{
+	width:350px;
+	height:100%;
+	vertical-align:top;
+}
+.MainMiddle1{
+	width:480px;
+	vertical-align:top;
+	padding:3px;
+	background-color:white;
+}
+.MainMiddle1CEO{
+	width:750px;
+	vertical-align:top;
+	padding:3px;
+	background-color:white;
+}
+
+.MainMiddle1Report{
+	width:70%;
+	vertical-align:top;
+	padding:3px;
+}
+.MainMiddle1Report1{
+	width:100%;
+	vertical-align:top;
+	padding:3px;
+}
+
+
+.MainSpanceBg{
+	width:4px;
+	background-color:white;
+}
+.MainSpanceBgReport{
+	width:20px;
+}
+
+.MainMTable{
+	width:100%;
+	border:0px;
+}
+.MMTTitleC{
+	padding-left:5px;
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:3px;
+}
+.MMTTitleE{
+	color:#FD6B08;
+	font-size:12px;
+	padding-left:4px;
+	font-weight:bold;
+	font-family:宋体;
+}
+.MMTLine{
+	background-image:url('/_layouts/IMAGES/MossImgs/MMTLine.gif');
+	height:1px;
+	background-repeat:no-repeat;
+}
+.MMTContent{
+	height:200px;
+	vertical-align:top;
+	/*padding-left:10px;
+	padding-right:5px;
+	padding-top:5px;*/
+}
+
+.MainRight{
+	width:221px;
+	background-color:#EFEFEF;
+	vertical-align:top;
+	text-align:center;
+}
+.MainRight1{
+	width:257px;
+	vertical-align:top;
+	text-align:right;
+}
+.MainRight1Report{
+	width:30%;
+	vertical-align:top;
+	text-align:right;
+	padding-right:5px;
+}
+
+.MRTable{
+	width:187px;
+}
+.MRTTd1{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.MRTTd2{
+	background-image:url('/_layouts/IMAGES/MossImgs/MRTop.jpg');
+	background-repeat:no-repeat;
+	height:11px;
+	width:187px; 
+}
+.MRTTd3{
+	border-left: 1px solid #FFFFFF;
+	height:117px;
+		width:180px;
+		vertical-align:top;
+	background-image:url('/_layouts/IMAGES/MossImgs/MRMBg.jpg');
+		background-repeat:repeat-x;
+		background-color:#F9F9F9;
+}
+.MRTTd4{
+	background-image:url('/_layouts/IMAGES/MossImgs/MRRBg.jpg');
+	height:100%;
+	width:6px; 
+}
+.MRTTd5{
+	background-image:url('/_layouts/IMAGES/MossImgs/MRBottom.jpg');
+	background-repeat:no-repeat;
+	height:17px;
+	width:187px; 
+}
+.MRTTd6{
+	border-left: 1px solid #FFFFFF;
+	height:137px;
+		width:180px;
+		vertical-align:top;
+	background-image:url('/_layouts/IMAGES/MossImgs/MRMBg.jpg');
+		background-repeat:repeat-x;
+		background-color:#F9F9F9;
+}
+.mainBgLine{
+	background-color:#E66308;
+	height:5px;
+}
+.mainBgLineBack{
+	background-color:#000000;
+	height:5px;
+}
+.buttomBg{
+	height:59px;
+	padding-top:20px;
+	width:100%;
+	text-align:center;
+}
+.bttomLeftTable{
+	width:100%;
+	margin:auto;
+	border:0px;
+}
+.bLeftImgBg{
+	background-image:url('/_layouts/IMAGES/MossImgs/bLeft.jpg');
+	height:48px;
+	width:7px;
+	background-repeat:no-repeat;
+}
+.bMContent{
+	background-image:url('/_layouts/IMAGES/MossImgs/MLeft.jpg');
+	text-align:center;
+	font-size:12px;
+	color:white;
+}
+.bMContent div{
+	color:white;
+}
+.bRightImgBg{
+	background-image:url('/_layouts/IMAGES/MossImgs/rLeft.jpg');
+	width:7px;
+	background-repeat:no-repeat;
+}
+/*End 网站集首页*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*公共*/
+body{
+	margin:0px;
+	text-align:center;
+	background-color:gray;
+}
+img{
+	border:0px;
+}
+.MainContentBg{
+	background-color:white;
+}
+/*上部分*/
+	/*ICO和欢迎信息*/
+	.TopTabel{
+		border:0px;
+		width:100%;
+		text-align:left;
+		background-color:white;
+	}
+	.ADLeft{
+		width:487px;
+		height:104px;
+		background-image:url('/_layouts/IMAGES/MossImgs/ADLeft.jpg');
+		background-repeat:no-repeat;
+	}
+	.ADRight{
+		width:516px;
+		height:104px;
+		background-image:url('/_layouts/IMAGES/MossImgs/ADRight.jpg');
+		background-repeat:no-repeat;
+
+	}
+	#TopIco{
+		height:63px;
+	}
+	#Ico {
+		background-image:url('/_layouts/IMAGES/MossImgs/ico.gif') ;
+		height:65px;
+		width:307px;
+		background-repeat:no-repeat;
+	}
+	#Welcome{
+		font-size:13px;
+		font-weight:bold;
+		padding-top:10px;
+		vertical-align:top;
+	}
+	#Welcome a{
+		font-size:13px;
+		font-weight:bold;
+		padding-top:10px;
+		vertical-align:top;
+		color:#666666;
+		text-decoration:none;
+	}
+/*下部分*/
+.MiddleTabel{
+	border:0px;
+	width:780px;
+	height:100%;
+	text-align:left;
+	background-color:white;
+}
+	/*左边区域*/
+	.LeftNavigation {
+		background-color:#EFEFEF;
+		height:100%;
+		width:155px;
+		vertical-align:top;
+	}
+	#LeftTitle{
+		border: 1px solid #C6C6C6;
+	height:25px;
+			width:155px;
+		background-image:url('/_layouts/IMAGES/MossImgs/page2bg.jpg');
+			background-repeat:repeat-x;
+			padding-top:1px;
+	}
+	#LeftTitle img{
+		vertical-align:bottom;
+		padding-left:20px;
+	}
+	#LeftTitle a{
+		color:#F87B3B;
+		font-size:13px;
+		letter-spacing:1px;
+		padding-left:4px;
+		font-weight:bold;
+		text-decoration:none;
+		vertical-align:bottom;
+	}
+	#LeftContent{
+		height:453px;
+		width:176px;
+		padding-left:28px;
+	}
+	#LeftContent div{
+		vertical-align:middle;
+		padding-top:2px;
+		padding-bottom:2px;
+	}
+	#LeftContent span{
+		font-family:Wingdings;
+		font-size:8px;
+	}
+	#LeftContent a{
+		font-size:12px;
+		text-decoration:none;
+		color:black;
+		letter-spacing:1px;
+		padding-left:5px;
+	}
+	/*中部及右边区域*/
+	.MiddleContent{
+		background-color:white;
+		width:571px;
+		height:100%;
+		vertical-align:top;
+		text-align:center;
+	}
+	#MiddleNavigation{
+		border-bottom-style:solid; 
+		border-bottom-width: 1px; 
+		border-bottom-color: #E3671F;
+		font-size:13px;
+		font-family:微软雅黑;
+		width:550px;
+		font-weight:bold;
+		text-align:left;
+		padding:5px;
+	}
+	#MiddleNavigation a{
+		font-size:13px;
+		font-family:微软雅黑;
+		color:black;
+		text-decoration:none;
+		font-weight:bold;
+	}
+/*底部区域*/
+.BottomZone{
+	background-color:#E0E0E0;
+	height:45px;
+	width:780px;
+	/*border-top-style: solid; 
+	border-top-width: 1px; 
+	border-top-color: #EEEEEE;*/
+	border-bottom-style: solid; 
+	border-bottom-width: 1px; 
+	border-bottom-color: #EEEEEE;
+}
+/*独立*/
+#MidCenterDivZone1,#MidCenterDivZone2,#MidCenterDivZone3,#MidCenterDivZone33,#MidCenterDivZone4,#MidCenterDivZone5,#MidCenterDivZone6,#MidCenterDivZone33{
+	vertical-align:top;
+	width:100%;
+	margin-top:5px;
+}
+#MidCenterDivZone1{
+	height:158px;
+	
+}
+#MidCenterDivZone2{
+	margin-top:9px;
+	
+}
+#MidCenterDivZone3{
+	margin-top:9px;
+	/*height:158px;*/
+	vertical-align:middle;
+}
+#MidCenterDivZone33{
+	margin-top:9px;
+	
+	vertical-align:middle;
+}
+#MidCenterDivZone4{
+	margin-top:9px;
+	/*height:158px;*/
+	vertical-align:middle;
+}
+#MidCenterDivZone5{
+	margin-top:9px;
+	height:136px;
+	vertical-align:middle;
+	display:none;
+}
+#MidCenterDivZone6{
+	margin-top:9px;
+	height:158px;
+	background-color:#F6F6F6;
+	vertical-align:middle;
+}
+#departmentjb a{
+	color:black;
+}
+.imgNewsStyle{
+	height:98px;
+	width:135px;
+}
+.mainContentLine3{
+	height:27px;
+	padding-left:10px;
+}
+.mainContentLine a{
+	padding-left:3px;
+}
+.newPageTabel{
+	width:100%;
+	padding:5px;
+	vertical-align:middle;
+}
+.newPageTdTitle{
+	width:25%;
+	color:#525252;
+	font-size:12px;
+	font-weight:bold;
+	padding-left:10px;
+	vertical-align:middle;
+	border-top-style: solid; border-top-width: 1px; border-top-color: #D8D8D8;
+}
+.newPageTdContent{
+	width:75%;
+	padding-left:5px;
+	border-top-style: solid; border-top-width: 1px; border-top-color: #D8D8D8;
+	background-color:#EFEFEF;
+}
+.newPageTdTitle1,.newPageTdTitle001,.newAttachmentTdTitle{
+	width:25%;
+	color:#525252;
+	font-size:12px;
+	font-weight:bold;
+	padding-left:10px;
+	vertical-align:middle;
+	border-top-style: solid; border-top-width: 1px; border-top-color: #D8D8D8;
+	border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #D8D8D8;
+}
+.newPageTdContent1,.newPageTdContent001,.newAttachmentTdContent{
+	width:75%;
+	padding-left:5px;
+	border-top-style: solid; border-top-width: 1px; border-top-color: #D8D8D8;
+	border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #D8D8D8;
+	background-color:#EFEFEF;
+}
+.newAttachmentTdContent{
+	height:50px;
+}
+.newPageTdTitle002{
+	width:25%;
+	color:#525252;
+	font-size:12px;
+	font-weight:bold;
+	padding-left:10px;
+	vertical-align:middle;
+	border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #D8D8D8;
+}
+.newPageTdContent002{
+	width:75%;
+	padding-left:5px;
+	border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #D8D8D8;
+	background-color:#EFEFEF;
+}
+.AttachmentControl{
+	width:300px;
+}
+.AttachmentTable{
+	width:100%;
+	border:0px;
+}
+.newPageBtTd{
+	text-align:right;
+	padding-right:5px;
+	border-top-style: solid; border-top-width: 1px; border-top-color: #D8D8D8;
+}
+.newPageErrTd{
+	padding:5px;
+	color:red;
+	font-size:12px;
+}
+.flashStyleTd{
+	width:695px;
+	height:70px;
+}
+.flashStyle{
+	height:65px;
+	width:749px;
+}
+.wztdStyle{
+	padding-left:12px;
+}
+/*最新更改*/
+.ms-bodyareaframe{
+	border: 1px solid #FFFFFF;
+}
+.officeLink{
+	height:15px;
+}
+#newGridView a{
+	vertical-align:bottom;
+}
+#welcomeNewPS a{
+	color:black;
+}
+.hideDesLink,.hideDescription{color:#276CFF;padding:3px}
+/*新建编辑页面导航样式*/
+#disEditTable{
+	width:100%;
+	height:24px;
+	border: 1px solid #B6BCC4;
+	vertical-align:middle;
+	text-align:left;
+	padding-left:5px;
+	background-image:url('/_layouts/images/mossimgs/editDisbg.jpg');
+}
+.disEditTable{
+	width:100%;
+	height:24px;
+	border: 1px solid #B6BCC4;
+	vertical-align:middle;
+	text-align:left;
+	padding-left:5px;
+	background-image:url('/_layouts/images/mossimgs/editDisbg.jpg');
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#disEditTable a{
+	color:black;
+	font-size:12px;
+	text-decoration:none;
+}
+.editDisTd1{
+	width:16px;
+}
+.editDisTd2{
+	width:49px;
+	padding-top:1px;
+}
+.editDisLineStyle{
+	text-align:center;
+	width:11px;
+}
+.editDisTd3{
+	width:16px;
+}
+.editDisTd4{
+	width:49px;
+	padding-top:3px;
+}
+.bottomUserDiv{
+	padding-top:10px;
+	color:#4C4C4C;
+	font-size:12px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.bottomUser{
+	padding-left:10px;
+	padding-right:10px;
+	color:#276CFF;
+}
+/*定义*/
+
+.Customms-toolbar1{
+	background-image:url('/_layouts/images/mossimgs/linkmanBg.gif');
+	color:#D2B47A;
+	font-size:12px;
+	background-color:#F5E0A3;
+}
+.cellSpanceStyle{
+	width:99%;
+	text-align:right;
+	vertical-align:top;
+}
+.Customms-listviewtable1{
+	border-style: solid; border-width: 1px 0px 0px 1px; border-color: #FFCC00;
+	width:100%;
+	text-align:center;
+	font-size:12px;
+}
+.Customms-vh3{
+	border-style: solid; border-width: 0px 1px 1px 0px; border-color: #FFCC00;
+	background-color:#FFE680;
+	text-align:center;
+	height:20px;
+	font-weight:bold;
+	padding-top:2px;
+	vertical-align:middle;
+}
+.Customms-vb3{
+	border-style: solid; border-width: 0px 1px 1px 0px; border-color: #FFCC00;
+	font-size:12px;
+	text-align:center;
+	height:20px;
+	padding-top:2px;
+	vertical-align:middle;
+}
+.Customms-vb4{
+	border-style: solid; border-width: 0px 1px 1px 0px; border-color: #FFCC00;
+	font-size:12px;
+	height:20px;
+	padding-top:2px;
+}
+.Customms-vb3Link{
+	text-decoration:none;
+	color:#003399;
+}
+.seachBoxBorder{
+	border: 1px ridge #FFCC00;
+}
+
+.mainContentLine2{
+	height:27px;
+	padding-left:15px;
+	border-bottom-style: dotted; border-bottom-width: 1px; border-bottom-color: #8F8F8F;
+}
+
+
+
+
+
+
+
+
+.SMGridView{
+	width:100%;
+	text-align:center;
+	
+}
+.ToolBarTDCustom{
+	border:1px solid #B6BCC4;
+	background-image:url('/_layouts/images/mossimgs/listheadergrad_lacquer.gif');
+	background-repeat:repeat-x;
+	color:#D2B47A;
+	font-size:12px;
+	background-color:#CFD2D6;
+	height:26px;
+}
+.HyperLinkDiv{
+	float:left;
+	height:16px;
+	padding-top:5px;
+	padding-left:10px;
+}
+.LinkBtLineStyle{
+	padding-left:10px;
+	padding-right:10px;
+}
+.txtConditionStyle{
+	border: 1px ridge #B6BCC4;
+}
+.btnSearchStyle{
+	height:21px;
+}
+.HeaderStyleCustom{
+	background-color:#F2F2F2;
+}
+.ItemStyleCustom{
+}
+.txtPageStyle{
+	height:19px;
+}
+
+#img{
+	background-color:transparent;
+        border:0px;
+        width:120px;
+        /*height:189px;*/
+	vertical-align:middle;
+	text-align:right;
+}
+#img img{
+border:0px;
+}
+#floatUrl{
+text-align:center;
+margin-top:5px;
+}
+
+
+
+
+
+
+
+
+
+.ms-titlearea{
+	color:black;
+}
+.tr1,.tr1 a,.tr1 a:link,.tr1 a:visited,.tr1 a:active{
+	color:black;
+	text-decoration:none;
+	font-weight:lighter;
+}
+.tablelist table{
+	border:0px;
+	border-left:1px solid #636363 !important;
+	border-bottom:1px solid #636363 !important;
+}
+.tablelist table td{
+	border:0px;
+	border-right:1px solid #636363 !important;
+	border-top:1px solid #636363 !important;
+}
+.tablelist{
+	border-right:1px solid #AoAoAo;
+}
+.ms-WPBody .TopSpaceR,.tablelist .TopSpaceR{
+	font-size:12px;
+	border:0px;
+}
+.orangelink{
+	font-weight:lighter !important;
+}
+.ms-WPBody .button2{
+	margin-top:15px;
+	background-image:url('/_layouts/images/mossimgs/wfbtn.jpg');
+	background-color:transparent;
+	height:24px;
+	font-size:12px;
+	width:91px;
+	border:0px;
+	background-repeat:no-repeat;
+	
+}
+.CLeftMContentZone{
+	width:210px;
+	background-color:#ededed;
+}
+.CMContentZone{
+	width:743px;
+}
+.HomeSpace{
+	 background-color:#eef3f7;
+	 width:15px;
+}
+.HomeLineZone{
+	border-bottom:#69c4d6 2px solid;
+	height:5px;
+}
+.HomeLineBg
+{
+	background-color:#F4F8FB;
+}
+.buttomBg{
+	background-color:#EEF3F7;
+}
+.MSiteTitle{
+	margin-top:15px;
+	background-image:url('/_layouts/IMAGES/MossImgs/sitetitlebg.jpg');
+	width:210px;
+	text-align:left;
+	height:24px;
+	background-repeat:no-repeat;
+	padding-left:18px;
+    padding-top:4px;
+}
+.MSiteTitle a,.MSiteTitle a:link,.MSiteTitle a:active,.MSiteTitle a:visited,.MSiteTitle a:hover{
+	color:white;
+	font-size:14px;
+	font-weight:bold;
+	letter-spacing:2px;
+	text-decoration:none;
+}
+#masterdivBig,.DivNavgZone{
+	width:210px;
+}
+.ms-bodyareaframe{
+	border:0px !important;
+}
+
+#leftblock{
+	margin-left:0px !important;;
+	background-image:none !important;
+}
+#leftblock div{
+	border:0px !important;
+}
+#pageright{
+	width:720px !important;
+}
+#mainleft{
+	background-image:none !important;
+	padding-bottom:0px !important;
+	margin-bottom:0px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
