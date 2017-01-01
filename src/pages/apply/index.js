@@ -11,7 +11,6 @@ var date = new Date()
 var curDate = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate()
 $(function () {
   var $pageContent = $('.page-content')
-  var $applyContent = $('.apply-container')
   var $address = $('.js-address')
   var $reason = $('.js-reason')
   var $detail = $('.js-detail')
@@ -83,9 +82,9 @@ $(function () {
   /*
   * 填写事由，滑动到底部，防止键盘遮挡
   * */
-  $('.js-detail').on('focus', function () {
+  $detail.on('focus', function () {
     setTimeout(function () {
-      $pageContent.scrollTop($applyContent.height() - $pageContent.height())
+      $pageContent.scrollTop($detail.offset().top)
     }, 200)
   })
 
