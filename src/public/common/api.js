@@ -24,11 +24,11 @@ var dev = {
   goout_request: '/static/mock/goout_request.json'
 }
 var prod = {
-  goout: '',
-  resolve_goout: '',
-  istart: '',
-  news: '',
-  goout_request: ''
+  goout: '/workflow/billQuery',
+  resolve_goout: '/workflow/billApprove',
+  istart: '/workflow/billQuery',
+  news: '/news/headLinesQuery',
+  goout_request: '/workflow/billApply'
 }
 
 /*
