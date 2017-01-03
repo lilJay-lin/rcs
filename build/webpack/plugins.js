@@ -44,7 +44,7 @@ const configPlugins = [
    })*/
   /*提取css到文件*/
   //new ExtractTextPlugin(util.assetsPath('css/[name].css'))
-  new ExtractTextPlugin(util.assetsPath('css/style.css'),{
+  new ExtractTextPlugin(util.assetsPath('css/rcs.css'),{
     allChunks: true
   })
 ]
