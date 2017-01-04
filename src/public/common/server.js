@@ -11,6 +11,7 @@ function deal (options) {
     /*
      请求成功
      */
+    res.result = parseInt(res.result, 10)
     if (res.result === status.OK) {
       deferred.resolve(res)
     } else if (res.result === status.UN_AUTHOR) {
@@ -52,9 +53,10 @@ module.exports = {
     }
     return deal({
       url: url,
-      data: obj,
+      data: JSON.stringify(obj),
       cache: false,
       dataType: 'json',
+      contentType: 'application/json',
       timeout: timeout,
       method: 'POST'
     })
