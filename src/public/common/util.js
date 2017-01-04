@@ -120,7 +120,6 @@ function repeat (type, str, len, pad) {
   if (l > len) {
     return str
   }
-  console.log(str)
   var pads = repeatPad(pad, len - l + 1)
   return type === RPAD ? str + pads : pads + str
 }
@@ -171,5 +170,9 @@ module.exports =  {
   getDateTime: function () {
     var date = new Date();
     return date.getFullYear() + '-' + this.lpad((date.getMonth() + 1), 2) + '-' + this.lpad(date.getDate(), 2) + ' ' + this.lpad(date.getHours(), 2) + ':' + this.lpad(date.getMinutes(), 2)
+  },
+  getDate: function () {
+    var date = new Date();
+    return date.getFullYear() + '-' + this.lpad((date.getMonth() + 1), 2) + '-' + this.lpad(date.getDate(), 2)
   }
 }

@@ -26,7 +26,7 @@ $(function () {
   /*
   * 加载数据
   * */
-  server.post(api.istart, {opertionType: '1'}).done(function (res) {
+  server.post(api.istart, {operationType: '1'}).done(function (res) {
     if (res && res.result === status.OK && res.items) {
       var items = res.items
       if (items.length > 0) {

@@ -26,7 +26,7 @@ $(function () {
   /*
   * 加载数据
   * */
-  server.post(api.goout, {opertionType: '2'}).done(function (res) {
+  server.post(api.goout, {operationType: '2'}).done(function (res) {
     if (res && res.result === status.OK && res.items) {
       var items = res.items
       if (items.length > 0) {
@@ -41,13 +41,20 @@ $(function () {
   * */
   $cnt.delegate('.goout-button', 'click', function () {
     var $el = $(this)
-    var id = $el.data('id')
-    server.post(api.resolve_goout, {processId: id, strApproveValue: 1}).done(function (res) {
+    var id = $el.data('id') + ''
+    var billNo = $el.data('billNo') + ''
+    if ($el.data('locked')) {
+      return
+    }
+    $el.data('locked', 1)
+    server.post(api.resolve_goout, {processId: id, strApproveValue: '1', billNo: billNo}).done(function (res) {
       if (res && res.result === status.OK) {
         alert('审批成功')
         $el.closest('.goout-item').remove()
       }
       check()
+    }).fail(function () {
+      $el.data('locked', 0)
     })
   })
 })

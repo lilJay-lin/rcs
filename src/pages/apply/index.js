@@ -7,8 +7,8 @@ var server = require('common/server')
 var api = require('common/api').list
 var status = require('common/api').status
 var validate = require('common/validate')
-var date = new Date()
-var curDate = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate()
+var util = require('common/util')
+var curDate = util.getDate()
 $(function () {
   var $pageContent = $('.page-content')
   var $address = $('.js-address')
@@ -97,9 +97,9 @@ $(function () {
       return
     }
     $(this).addClass('disabled')
-    var billTitle = encodeURIComponent($detail.val().trim())
-    var destination = encodeURIComponent($address.val().trim())
-    var reasonType = encodeURIComponent($reason.html())
+    var billTitle = $detail.val().trim()
+    var destination = $address.val().trim()
+    var reasonType = $reason.html()
     var data = {
       destination: destination,
       reasonType: reasonType,
@@ -144,15 +144,18 @@ $(function () {
     }
     if (errMsg) {
       alert(errMsg)
+      $(this).removeClass('disabled')
     } else {
       server.post(api.goout_request, {billTitle: billTitle, customData: data}).done(function (res) {
         if (res && res.result === status.OK) {
           alert('提交成功')
           return
         }
+        $(this).removeClass('disabled')
+      }).fail(function () {
+        $(this).removeClass('disabled')
       })
     }
-    $(this).removeClass('disabled')
   })
 })
 
