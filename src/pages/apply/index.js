@@ -9,6 +9,8 @@ var status = require('common/api').status
 var validate = require('common/validate')
 var util = require('common/util')
 var curDate = util.getDate()
+var loading = require('../_ejs/loading.ejs')
+var none = require('../_ejs/none.ejs')
 $(function () {
   var $pageContent = $('.page-content')
   var $address = $('.js-address')
@@ -18,12 +20,16 @@ $(function () {
   var $startTime = $('.js-start-time')
   var $endDate = $('.js-end-date')
   var $endTime = $('.js-end-time')
+  var $loading = $(loading({}))
+  var loadingTimeout = null
+  var $body = $(document.body)
+  $body.append($loading)
 
   /*
   设置时间控件语言
   */
-  $.datetimepicker.setLocale('ch')
-  $('.select-date').datetimepicker()
+  $('.js-start-datetime').datetimepicker({lang: 'ch', defaultTime: '09:00'})
+  $('.js-end-datetime').datetimepicker({lang: 'ch', defaultTime: '18:00'})
 
   /*
   * 设置开始/结束时间
@@ -50,7 +56,7 @@ $(function () {
   * 显示/关闭选择外出原因弹窗
   * */
   function toggleReason () {
-    $('.mask').toggle()
+    $('.js-apply-reason-mask').toggle()
   }
   /*
   * 初始化时间
@@ -75,7 +81,7 @@ $(function () {
   /*
   * 取消
   * */
-  $('.js-apply-reason .js-cancel').on('click', function () {
+  $('.js-cancel').on('click', function () {
     toggleReason()
   })
 
@@ -142,18 +148,27 @@ $(function () {
         errMsg = '外出起始时间不能大于外出结束时间'
       }
     }
+    function cb () {
+      clearTimeout(loadingTimeout)
+      $loading.hide()
+      $el.removeClass('disabled')
+    }
     if (errMsg) {
-      alert(errMsg)
-      $(this).removeClass('disabled')
+      util.alert(errMsg)
+      $el.removeClass('disabled')
     } else {
+      loadingTimeout = setTimeout(function () {
+        $loading.show()
+      }, 50)
       server.post(api.goout_request, {billTitle: billTitle, customData: data}).done(function (res) {
+        cb()
         if (res && res.result === status.OK) {
-          alert('提交成功')
+          util.alert('提交成功')
+          $(document.body).html(none({title: '已提交成功'}))
           return
         }
-        $(this).removeClass('disabled')
       }).fail(function () {
-        $(this).removeClass('disabled')
+        cb()
       })
     }
   })
